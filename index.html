@@ -20,7 +20,8 @@
   <body>
     <nav>
       <div class="logos">
-        <a href="#">
+        <a href="#" class="logo__anchor">
+          <h1 class="full-name">Abdorruhman<br />Abdelwahed</h1>
           <img
             src="./assets/adv-portfolio logo.png"
             alt=""
@@ -103,6 +104,88 @@
         ></a>
       </header>
     </section>
+    <div class="modal">
+      <div class="modal__half modal__about">
+        <h2 class="modal__about--title">A bit about me.</h2>
+        <p class="modal__about--description">
+          I'm a <span class="secondary">front-end software engineer</span> born
+          in New York and raised in Egypt. After graduating high school at 16,
+          I'm preparing to better the world with beautiful user experience
+          designs and responsive code,<br />
+          <span class="secondary">just like with this website!</span>
+        </p>
+        <div class="modal__about--pron">
+          <h2 class="modal__about--pron--title">How do you say my name?</h2>
+          <p class="modal__about--pron--subtitle">
+            ab•dor•rah•man <br />ab•del•wah•hed
+          </p>
+        </div>
+        <div class="language__list">
+          <div class="language">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                alt=""
+                class="language__img"
+              />
+
+            <span class="language__name">HTML</span>
+          </div>
+          <div class="language">
+
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                alt=""
+                class="language__img"
+              />
+
+            <span class="language__name">CSS</span>
+          </div>
+          <div class="language">
+
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+                alt=""
+                class="language__img"
+              />
+
+            <span class="language__name">JavaScript</span>
+          </div>
+          <div class="language">
+
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+                alt=""
+                class="language__img"
+              />
+
+            <span class="language__name">React</span>
+          </div>
+        </div>
+        </div>
+        <div class="modal__half modal__contact">
+          <h2 class="modal__contact--title"><span class="arrow">></span> Let's Talk!</h2>
+          <div class="hover__opacity">
+            <h3 class="modal__contact--subtitle">I'd love to hear from you.</h3>
+          <form id="contact__form" action="">
+            <div class="form__item">
+                <label class="form__item--label">Name</label>
+                <input type="text" class="input" name="user_name" required></input>
+            </div>
+            <div class="form__item">
+                <label class="form__item--label">Email</label>
+                <input type="email" class="input" name="user_email" required></input>
+            </div>
+            <div class="form__item">
+                <label class="form__item--label">Message</label>
+                <textarea class="input" name="user_message" rows="8" required></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit click">Send Email</button>
+          </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
     <section id="projects">
       <div class="container">
         <div class="row">
@@ -235,7 +318,8 @@
       <div class="container">
         <figure class="footer__logo--wrapper">
           <div class="logos">
-            <a href="#">
+            <a href="#" class="logo__anchor">
+              <p class="footer__top">^Top^</p>
               <img
                 src="./assets/adv-portfolio logo.png"
                 alt=""
