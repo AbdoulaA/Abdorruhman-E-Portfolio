@@ -15,6 +15,14 @@
       src="https://kit.fontawesome.com/f419ce33b3.js"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("vjPbQBxuwuYwq5kLv");
+   })();
+</script>
   </head>
   <script src="app.js"></script>
   <body>
@@ -94,7 +102,7 @@
           ></a>
         </div>
         <a href="">
-          <div class="email__button">
+          <div class="email__button click">
             <i class="fa-solid fa-envelope"></i>
           </div>
         </a>
@@ -163,25 +171,31 @@
         </div>
         </div>
         <div class="modal__half modal__contact">
-          <h2 class="modal__contact--title"><span class="arrow">></span> Let's Talk!</h2>
-          <div class="hover__opacity">
+            <div class="modal__overlay modal__overlay--loading">
+                <i class="fa-solid fa-spinner"></i>
+            </div>
+            <div class="modal__overlay modal__overlay--success">
+                Thank you for the email! Looking forward to our conversation.
+            </div>
+            <div><a href=""><i class="fa-solid fa-times click"></i></a></div>
+          <h2 class="modal__contact--title hide"><span class="arrow">></span> Let's Talk!</h2>
+          <div class="hover__opacity hide">
             <h3 class="modal__contact--subtitle">I'd love to hear from you.</h3>
-          <form id="contact__form" action="">
+          <form id="contact__form" onsubmit="contact(event)">
             <div class="form__item">
                 <label class="form__item--label">Name</label>
-                <input type="text" class="input" name="user_name" required></input>
+                <input type="text" class="input" name="user_name"></input>
             </div>
             <div class="form__item">
                 <label class="form__item--label">Email</label>
-                <input type="email" class="input" name="user_email" required></input>
+                <input type="email" class="input" name="user_email"></input>
             </div>
             <div class="form__item">
                 <label class="form__item--label">Message</label>
-                <textarea class="input" name="user_message" rows="8" required></textarea>
+                <textarea class="input" name="user_message" rows="8"></textarea>
             </div>
-            <button id="contact__submit" class="form__submit click">Send Email</button>
+            <button id="contact__submit" class="form__submit click" type="submit" value="Submit">Send Email</button>
           </form>
-
           </div>
         </div>
       </div>
@@ -218,7 +232,7 @@
                     target="_blank"
                     class="project__description--link"
                     ><i
-                      class="fa-solid fa-link project__description--link--icon"
+                      class="click fa-solid fa-link project__description--link--icon"
                     ></i
                   ></a>
                   <a
@@ -226,7 +240,7 @@
                     target="_blank"
                     class="project__description--link"
                     ><i
-                      class="fa-brands fa-github project__description--link--icon"
+                      class="click fa-brands fa-github project__description--link--icon"
                     ></i
                   ></a>
                 </div>
@@ -257,7 +271,7 @@
                     target="_blank"
                     class="project__description--link"
                     ><i
-                      class="fa-solid fa-link project__description--link--icon"
+                      class="click fa-solid fa-link project__description--link--icon"
                     ></i
                   ></a>
                   <a
@@ -265,7 +279,7 @@
                     target="_blank"
                     class="project__description--link"
                     ><i
-                      class="fa-brands fa-github project__description--link--icon"
+                      class="click fa-brands fa-github project__description--link--icon"
                     ></i
                   ></a>
                 </div>
@@ -296,7 +310,7 @@
                     target="_blank"
                     class="project__description--link"
                     ><i
-                      class="fa-solid fa-link project__description--link--icon"
+                      class="click fa-solid fa-link project__description--link--icon"
                     ></i
                   ></a>
                   <a
@@ -304,7 +318,7 @@
                     target="_blank"
                     class="project__description--link"
                     ><i
-                      class="fa-brands fa-github project__description--link--icon"
+                      class="click fa-brands fa-github project__description--link--icon"
                     ></i
                   ></a>
                 </div>
