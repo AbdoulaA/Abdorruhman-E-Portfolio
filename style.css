@@ -45,6 +45,8 @@ li {
 h3 {
   font-weight: 500;
 }
+
+
 .container {
   padding: 64px 0;
   margin: 0 auto;
@@ -330,6 +332,7 @@ header {
   height: 75px;
   width: 75px;
   background-color: #16262e;
+  border: none;
   position: fixed;
   bottom: 32px;
   right: 40px;
@@ -401,18 +404,27 @@ Modal
 */
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
   max-width: 1100px;
   height: 700px;
-  box-shadow: 0 20px 40px 0 rgba(9, 0, 58, 0.5);
   border-radius: 20px;
   overflow: hidden;
   display: flex;
   flex-direction: row;
+  visibility: hidden;
+  z-index: -1;
+  transition: all 500ms ease;
+}
+
+
+.modal__open .modal {
+  box-shadow: 0 20px 40px 0 rgba(9, 0, 58, 0.5);
+  visibility: visible;
+  z-index: 100;
 }
 
 .modal__half {
@@ -571,6 +583,7 @@ Modal
   opacity: 1;
   transform: translateY(0);
 }
+
 
 .modal__contact:hover .modal__contact--title {
   transform: translate(-140px, -275px);

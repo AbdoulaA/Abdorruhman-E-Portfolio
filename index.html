@@ -101,11 +101,11 @@
             ><i class="fa-solid fa-file social__link click"></i
           ></a>
         </div>
-        <a href="">
-          <div class="email__button click">
-            <i class="fa-solid fa-envelope"></i>
-          </div>
-        </a>
+        
+        <button class="email__button click" onclick="toggleModalOn()">
+          <i class="fa-solid fa-envelope"></i>
+        </button>
+        
 
         <a href="#projects" class="scroll"
           ><div class="scroll__icon click"></div
@@ -177,22 +177,22 @@
             <div class="modal__overlay modal__overlay--success">
                 Thank you for the email! Looking forward to our conversation.
             </div>
-            <div><a href=""><i class="fa-solid fa-times click"></i></a></div>
+            <div><i class="fa-solid fa-times click" onclick="toggleModalOff()"></i></div>
           <h2 class="modal__contact--title hide"><span class="arrow">></span> Let's Talk!</h2>
           <div class="hover__opacity hide">
             <h3 class="modal__contact--subtitle">I'd love to hear from you.</h3>
           <form id="contact__form" onsubmit="contact(event)">
             <div class="form__item">
                 <label class="form__item--label">Name</label>
-                <input type="text" class="input" name="user_name"></input>
+                <input type="text" class="input" name="user_name" required></input>
             </div>
             <div class="form__item">
                 <label class="form__item--label">Email</label>
-                <input type="email" class="input" name="user_email"></input>
+                <input type="email" class="input" name="user_email" required></input>
             </div>
             <div class="form__item">
                 <label class="form__item--label">Message</label>
-                <textarea class="input" name="user_message" rows="8"></textarea>
+                <textarea class="input" name="user_message" rows="8" required></textarea>
             </div>
             <button id="contact__submit" class="form__submit click" type="submit" value="Submit">Send Email</button>
           </form>
