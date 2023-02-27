@@ -114,6 +114,7 @@
     </section>
     <div class="modal">
       <div class="modal__half modal__about">
+
         <h2 class="modal__about--title">A bit about me.</h2>
         <p class="modal__about--description">
           I'm a <span class="secondary">front-end software engineer</span> born
@@ -171,15 +172,16 @@
         </div>
         </div>
         <div class="modal__half modal__contact">
+          <div><i class="fa-solid fa-times click" onclick="toggleModalOff()"></i></div>
+
             <div class="modal__overlay modal__overlay--loading">
                 <i class="fa-solid fa-spinner"></i>
             </div>
             <div class="modal__overlay modal__overlay--success">
                 Thank you for the email! Looking forward to our conversation.
             </div>
-            <div><i class="fa-solid fa-times click" onclick="toggleModalOff()"></i></div>
-          <h2 class="modal__contact--title hide"><span class="arrow">></span> Let's Talk!</h2>
-          <div class="hover__opacity hide">
+          <h2 class="modal__contact--title"><span class="arrow">></span> Let's Talk!</h2>
+          <div class="hover__opacity">
             <h3 class="modal__contact--subtitle">I'd love to hear from you.</h3>
           <form id="contact__form" onsubmit="contact(event)">
             <div class="form__item">

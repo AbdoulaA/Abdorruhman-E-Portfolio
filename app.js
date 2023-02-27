@@ -47,10 +47,3 @@ function toggleModalOff() {
   isModalOpen = false
 }
 
-function isContactHover() {
-  if (document.querySelector("body > .modal__contact:hover") != null) {
-    console.log("hovered");
-}
-}
-
-isContactHover()
