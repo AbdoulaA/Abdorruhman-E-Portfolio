@@ -99,6 +99,10 @@ form {
   width: 100%;
 }
 
+a {
+  color: #454bad;
+}
+
 /*
 
 
@@ -172,6 +176,10 @@ nav {
   color: #454bad;
   transition: all 300ms ease;
   transform: rotate(180deg);
+}
+
+.fa-circle-half-stroke:active {
+  transform: rotate(360deg);
 }
 
 .logos {
@@ -671,7 +679,7 @@ Modal
   z-index: 6;
   font-size: 40px;
   transition: transform 300ms ease;
-  z-index: 100;
+  z-index: 1000;
 }
 
 
@@ -875,3 +883,30 @@ Footer
   transform: translateX(100px);
   opacity: 1;
 }
+
+
+
+/* dark theme */
+body.dark {
+  background-color: #16262e;
+}
+
+body.dark p, body.dark h1, body.dark .link--anchor, body.dark .fa-circle-half-stroke{
+  color: #d6eeff;
+}
+
+body.dark .email__button {
+  background-color: #d6eeff;
+}
+
+body.dark .fa-envelope {
+  color: #16262e;
+}
+
+body.dark .personal-logo{
+  content: url("./assets/adv-portfolio-logo-white.png")
+}
+
+/* body.dark h1{
+  color: ;
+} */

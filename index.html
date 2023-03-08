@@ -25,7 +25,7 @@
 </script>
   </head>
   <script src="app.js"></script>
-  <body>
+  <body id="body">
     <nav>
       <div class="logos">
         <a href="#" class="logo__anchor">
@@ -59,13 +59,13 @@
         </li>
         <li class="nav__link">
           <a
-            href=""
-            class="link--anchor link__hover-effect link__hover-effect--black"
+            href="#"
+            class="link--anchor link__hover-effect link__hover-effect--black" onclick="toggleModalOn()"
             >Contact</a
           >
         </li>
         <li class="nav__link">
-          <a href=""><i class="fa-solid fa-circle-half-stroke"></i></a>
+          <a href="#"><i class="fa-solid fa-circle-half-stroke" onclick="toggleTheme()"></i></a>
         </li>
       </ul>
     </nav>
@@ -78,11 +78,9 @@
         <p class="header__para">
           I'm a <span class="secondary">Frontend Software Engineer</span> born
           in New York and raised in Egypt. <br />Here's a bit more
-          <a href=""
-            ><span class="secondary link__hover-effect--header"
-              >about me.</span
-            ></a
-          >
+            <span class="secondary link__hover-effect--header">
+              <a href="#" onclick="toggleModalOn()"> about me.</a>
+            </span>
         </p>
         <div class="social__links">
           <a
@@ -172,7 +170,7 @@
         </div>
         </div>
         <div class="modal__half modal__contact">
-          <div><i class="fa-solid fa-times click" onclick="toggleModalOff()"></i></div>
+          <div><i class="fa-solid fa-times click" onclick="toggleModalOn()"></i></div>
 
             <div class="modal__overlay modal__overlay--loading">
                 <i class="fa-solid fa-spinner"></i>
