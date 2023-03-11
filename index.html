@@ -19,12 +19,12 @@
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
 <script type="text/javascript">
+   
    (function(){
       emailjs.init("vjPbQBxuwuYwq5kLv");
    })();
 </script>
   </head>
-  <script src="app.js"></script>
   <body>
     <nav>
       <div class="logos">
@@ -57,10 +57,10 @@
             >Projects</a
           >
         </li>
-        <li class="nav__link">
+        <li class="nav__link" >
           <a
-            href=""
-            class="link--anchor link__hover-effect link__hover-effect--black"
+            href="#"
+            class="link--anchor link__hover-effect link__hover-effect--black" onclick="toggleModalOn()"
             >Contact</a
           >
         </li>
@@ -77,11 +77,9 @@
         </h1>
         <p class="header__para">
           I'm a <span class="secondary">Frontend Software Engineer</span> born
-          in New York and raised in Egypt. <br />Here's a bit more
-          <a href=""
-            ><span class="secondary link__hover-effect--header"
-              >about me.</span
-            ></a
+          in New York and raised in Egypt. <br />Here's a bit more 
+            <span class="secondary link__hover-effect--header"
+              ><a href="#" onclick="toggleModalOn()">about me.</a></span
           >
         </p>
         <div class="social__links">
@@ -172,7 +170,7 @@
         </div>
         </div>
         <div class="modal__half modal__contact">
-          <div><i class="fa-solid fa-times click" onclick="toggleModalOff()"></i></div>
+          <div><i class="fa-solid fa-times click" onclick="toggleModalOn()"></i></div>
 
             <div class="modal__overlay modal__overlay--loading">
                 <i class="fa-solid fa-spinner"></i>
@@ -180,23 +178,23 @@
             <div class="modal__overlay modal__overlay--success">
                 Thank you for the email! Looking forward to our conversation.
             </div>
-          <h2 class="modal__contact--title"><span class="arrow">></span> Let's Talk!</h2>
-          <div class="hover__opacity">
+          <h2 class="modal__contact--title hide"><span class="arrow">></span> Let's Talk!</h2>
+          <div class="hover__opacity hide">
             <h3 class="modal__contact--subtitle">I'd love to hear from you.</h3>
-          <form id="contact__form" onsubmit="contact(event)">
-            <div class="form__item">
-                <label class="form__item--label">Name</label>
-                <input type="text" class="input" name="user_name" required></input>
-            </div>
-            <div class="form__item">
-                <label class="form__item--label">Email</label>
-                <input type="email" class="input" name="user_email" required></input>
-            </div>
-            <div class="form__item">
-                <label class="form__item--label">Message</label>
-                <textarea class="input" name="user_message" rows="8" required></textarea>
-            </div>
-            <button id="contact__submit" class="form__submit click" type="submit" value="Submit">Send Email</button>
+            <form id="contact__form" autocomplete="off" onsubmit="contact(event)">
+              <div class="form__item">
+                  <label class="form__item--label">Name</label>
+                  <input type="text" class="input" name="user_name" required></input>
+              </div>
+              <div class="form__item">
+                  <label class="form__item--label">Email</label>
+                  <input type="email" role="presentation" autocomplete="off" class="input" name="user_email" required></input>
+              </div>
+              <div class="form__item">
+                  <label class="form__item--label">Message</label>
+                  <textarea class="input" name="user_message" rows="8" required></textarea>
+              </div>
+              <button id="contact__submit" class="form__submit click" type="submit" value="Submit">Send Email</button>
           </form>
           </div>
         </div>
@@ -368,7 +366,7 @@
             >
           </li>
           <li class="footer__link">
-            <a href="" class="footer__link--anchor">Contact</a>
+            <a href="#" onclick="toggleModalOn()" class="footer__link--anchor">Contact</a>
           </li>
           <li class="footer__link">
             <a
@@ -381,5 +379,6 @@
         </ul>
       </div>
     </section>
+    <script src="app.js"></script>
   </body>
 </html>

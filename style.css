@@ -25,6 +25,7 @@ h1 {
 
 a {
   text-decoration: none;
+  color: #454bad;
 }
 
 .click {
@@ -647,7 +648,7 @@ Modal
 }
 
 .modal__overlay--visible {
-  z-index: 100;
+  z-index: 20;
   display: flex;
 }
 
@@ -671,7 +672,7 @@ Modal
   z-index: 6;
   font-size: 40px;
   transition: transform 300ms ease;
-  z-index: 100;
+  z-index: 30;
 }
 
 
