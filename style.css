@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Tajawal:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Tajawal:wght@400;500;700&display=swap");
 * {
   font-family: "Nunito", sans-serif;
   padding: 0;
@@ -7,11 +7,15 @@
   scroll-behavior: smooth;
 }
 
+html {
+  margin: 0 auto;
+}
+
 body {
   background-color: #d6eeff;
   z-index: 2;
   transition: 700ms all ease;
-
+  margin: 0 auto;
 }
 
 p {
@@ -280,8 +284,6 @@ header {
   transform: translateY(0%);
 }
 
-
-
 .link__hover-effect--header {
   display: inline-block;
   position: relative;
@@ -431,7 +433,6 @@ Modal
   z-index: 100;
 }
 
-
 nav,
 header,
 #footer,
@@ -440,7 +441,6 @@ header,
   visibility: visible;
   opacity: 1;
   transition: all 600ms 1000ms ease;
-
 }
 
 .modal__open nav,
@@ -903,7 +903,6 @@ body.dark .scroll__icon {
   background-color: #d6eeff;
 }
 
-
 body.dark .email__button {
   background-color: #d6eeff;
 }
@@ -958,3 +957,155 @@ arabic
   /* transform: translateY(0%); */
 }
 
+@media (max-width: 950px) {
+  .modal__contact--title {
+    min-width: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .modal__about--title {
+    font-size: 38px;
+  }
+
+  .modal__about--description {
+    font-size: 20px;
+    min-width: 100%;
+    padding: 0;
+  }
+
+  .modal__about {
+    padding: 8px 24px;
+  }
+
+  .language {
+    margin: 6px;
+  }
+}
+
+@media (max-width: 770px) {
+  nav {
+    max-width: 700px;
+  }
+
+  .modal__about--title {
+    font-size: 36px;
+  }
+
+  .modal__about--description {
+    font-size: 16px;
+    min-width: 100%;
+    padding: 0;
+  }
+
+  .modal__about--pron--title {
+    font-size: 24px;
+  }
+
+  .modal__about--pron--subtitle {
+    font-size: 20px;
+  }
+
+  .language {
+    margin: 6px;
+  }
+
+  .modal__contact--title {
+    min-width: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 560px) {
+  .modal__about--title {
+    font-size: 30px;
+  }
+  .modal__about--pron--title {
+    font-size: 20px;
+  }
+
+  .modal__about--pron--subtitle {
+    font-size: 16px;
+  }
+
+  .modal__contact--title {
+    font-size: 30px;
+    margin-left: 40px;
+  }
+
+  form {
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 24px;
+  }
+
+  .modal__half {
+    padding: 10px;
+  }
+
+  #contact__form {
+    margin: 0 10px;
+  }
+
+  .modal__contact--subtitle {
+    padding-left: 20px;
+    margin: 20px 0;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+
+  #english__secondary {
+    font-size: 50px;
+  }
+  #arabic__secondary {
+    font-size: 70px;
+  }
+
+  header {
+    padding: 25px;
+  }
+
+  .secondary.arabic__toggle {
+    opacity: 1 !important;
+    transform: translate(-60%, 10%);
+  }
+
+  @media (max-width: 450px) {
+    #english__secondary {
+      font-size: 50px;
+    }
+
+    #arabic__secondary {
+      margin-top: 15px;
+      margin-left: 25px;
+    }
+
+    .nav__modal {
+      display: none;
+    }
+
+    .full-name {
+      font-size: 20px;
+      right: 5px;
+    }
+
+    .nav__link--list {
+      max-width: 140px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #arabic__secondary {
+    margin-left: 40px;
+  }
+}

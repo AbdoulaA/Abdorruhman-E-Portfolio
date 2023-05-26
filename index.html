@@ -46,10 +46,10 @@
 
       </div>
       <ul class="nav__link--list">
-        <li class="nav__link">
+        <li class="nav__link nav__modal">
           <a
             href="#"
-            class="link--anchor link__hover-effect link__hover-effect--black"
+            class="link--anchor link__hover-effect link__hover-effect--black" onclick="toggleModalOn()"
             >About</a
           >
         </li>
@@ -60,7 +60,7 @@
             >Projects</a
           >
         </li>
-        <li class="nav__link">
+        <li class="nav__link nav__modal">
           <a
             href="#"
             class="link--anchor link__hover-effect link__hover-effect--black" onclick="toggleModalOn()"
@@ -370,7 +370,7 @@
             >
           </li>
           <li class="footer__link">
-            <a href="" class="footer__link--anchor">Contact</a>
+            <a href="#" onclick="toggleModalOn()" class="footer__link--anchor">Contact</a>
           </li>
           <li class="footer__link">
             <a
