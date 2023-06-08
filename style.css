@@ -185,12 +185,15 @@ nav {
 
 .logos {
   position: relative;
-  width: 50px;
+  width: 100px;
   height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .personal-logo {
-  max-width: 50px;
+  max-width: 150px;
   width: 100%;
   position: absolute;
   top: -16px;
@@ -203,7 +206,7 @@ nav {
   position: absolute;
   top: -16px;
   right: 0;
-  max-width: 50px;
+  max-width: 150px;
   width: 100%;
   opacity: 1;
   z-index: 1;
@@ -217,7 +220,8 @@ nav {
   position: absolute;
   font-weight: bold;
   transform: translateY(30px);
-  left: -7px;
+  left: 15px;
+  top: -15px;
   width: 70px;
   opacity: 0;
   color: #6e75f9;
@@ -856,13 +860,14 @@ Footer
   position: relative;
 }
 
-.footer__logo {
+.footer__logo, .footer__logo--opacity {
   width: 100%;
-  max-width: 50px;
+  max-width: 100px;
 }
 
 .footer__logo--wrapper {
   display: flex;
+  align-items: center;
   justify-content: center;
   padding-bottom: 24px;
 }
